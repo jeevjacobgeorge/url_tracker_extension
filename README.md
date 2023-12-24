@@ -10,7 +10,7 @@ The "URL Saver" Chrome extension allows users to easily save URLs, including the
 ![Sample Image](sample.jpg)
 ## Installation
 To use this extension:
-1. Download the extension file from [url_tracker_extension.zip](https://github.com/jeevjacobgeorge/url_tracker_extension/releases/)
+1. Download the extension file from [Releases](https://github.com/jeevjacobgeorge/url_tracker_extension/releases)
 2. Open Google Chrome.
 3. Go to `chrome://extensions/`.
 4. Enable Developer mode.

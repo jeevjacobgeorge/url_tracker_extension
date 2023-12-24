@@ -13,6 +13,9 @@ if (leadsFromLocalStorage) {
 
 tabBtn.addEventListener("click", function(){    
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
+    if(myLeads.includes(tabs[0].url)) {
+        return
+    }
         myLeads.push(tabs[0].url)
         localStorage.setItem("myLeads", JSON.stringify(myLeads) )
         render(myLeads)
@@ -40,6 +43,9 @@ deleteBtn.addEventListener("dblclick", function() {
 })
 
 inputBtn.addEventListener("click", function() {
+    if(myLeads.includes(tabs[0].url)) {
+        return
+    }
     myLeads.push(inputEl.value)
     inputEl.value = ""
     localStorage.setItem("myLeads", JSON.stringify(myLeads) )
